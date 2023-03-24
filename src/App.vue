@@ -1,8 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <div>
+    <img src="../public/Datcord.png" alt="beautiful logo" id="logo">
+    <nav>
+      <router-link to="/">Chat</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+  </div>
   <router-view/>
 </template>
 
@@ -25,6 +28,14 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: red;
+}
+
+#logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 80px;
+  height: 80px;
 }
 </style>
