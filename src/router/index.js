@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
-import ControlView from '../views/ControlView'
+// import ControlView from '../views/ControlView'
 
 const routes = [
   {
@@ -22,11 +22,11 @@ const routes = [
     name: 'login',
     component: LoginView
   },
-  {
-    path: '/control',
-    name: 'control',
-    component: ControlView
-  }
+  // {
+  //   path: '/control',
+  //   name: 'control',
+  //   component: ControlView
+  // }
 ]
 
 const router = createRouter({
